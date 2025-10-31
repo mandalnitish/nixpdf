@@ -1,0 +1,6 @@
+# backend/.gitignore
+node_modules/
+uploads/*
+!uploads/.gitkeep
+.env
+*.log
