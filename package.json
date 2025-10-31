@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "qpdf": "^0.1.0-prealpha.1"
+  }
+}
