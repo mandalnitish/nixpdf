@@ -31,7 +31,8 @@ const MAX_FILES = 10;
 
 // ---------------- Middleware ----------------
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://127.0.0.1:3000'],
+  origin: ["https://nixpdf.vercel.app", "http://localhost:3000"],
+  methods: ["GET", "POST"],
   credentials: true
 }));
 app.use(express.json());
