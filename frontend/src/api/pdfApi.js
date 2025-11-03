@@ -1,7 +1,7 @@
 // src/api/pdfApi.js
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.REACT_APP_API_URL || "https://nixpdf-backend.onrender.com/api";
 
 // Enhanced upload and download with better error handling and filename extraction
 const uploadAndDownload = async (endpoint, files, extra = {}) => {

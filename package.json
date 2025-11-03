@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install && pip3 install -r requirements.txt"
+  },
   "dependencies": {
     "qpdf": "^0.1.0-prealpha.1"
   }
