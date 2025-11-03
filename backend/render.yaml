@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nixpdf-backend
+    env: node
+    buildCommand: |
+      apt-get update
+      apt-get install -y poppler-utils qpdf tesseract-ocr python3 python3-pip
+      pip3 install pdf2docx python-docx pypdf2
+      npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
